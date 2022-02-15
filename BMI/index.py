@@ -10,6 +10,13 @@ while True:
 
         print(f'your total metric bmi is {total_metric_bmi}')
 
+        if total_metric_bmi < 18.5:
+            print("your bmi  fall within the underweight range.")
+        elif 18.5 < total_metric_bmi < 24.9:
+            print("falls within the normal or Healthy Weight range.")
+        else:
+            print("falls within the overweight range.")
+
     elif x == 'impercial':
         w = float(input("enter your weight float form and kilogram format: "))
         h = float(input("enter your height float form and meter format: "))
@@ -20,6 +27,12 @@ while True:
         total_impercial_bmi = new_w * 703 / new_h ** 2
 
         print(f'your total impercial bmi is {total_impercial_bmi}')
+        if total_metric_bmi < 18.5:
+            print("your bmi  fall within the underweight range.")
+        elif 18.5 < total_metric_bmi < 24.9:
+            print("falls within the normal or Healthy Weight range.")
+        else:
+            print("falls within the overweight range.")
 
     else:
         print('somethin went wrong! try again!')
